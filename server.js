@@ -20,6 +20,7 @@ const io = socketio(server);
 
 // Set static folder
 app.use(express.static(path.join(__dirname, "public")));
+app.use(express.json())
 
 const botName = "ChatCord Bot";
 
